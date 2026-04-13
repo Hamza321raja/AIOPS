@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f4f4f4;
+}
+
+header {
+  background: #ff2b85;
+  padding: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+header input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+.filters {
+  text-align: center;
+  padding: 10px;
+}
+
+.filters button {
+  margin: 5px;
+  padding: 8px;
+  border: none;
+  background: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.menu-section {
+  flex: 2;
+}
+
+.cart-section {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+button {
+  background: #ff2b85;
+  color: white;
+  border: none;
+  padding: 6px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}

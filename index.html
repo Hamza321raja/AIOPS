@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Delivery App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🍔 Food Delivery</h1>
+  <input type="text" id="search" placeholder="Search food...">
+</header>
+
+<div class="auth">
+  <input id="name" placeholder="Name">
+  <input id="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Password">
+
+  <button onclick="signup()">Signup</button>
+  <button onclick="login()">Login</button>
+</div>
+
+<div class="filters">
+  <button onclick="filterCategory('all')">All</button>
+  <button onclick="filterCategory('fast')">Fast Food</button>
+  <button onclick="filterCategory('desi')">Desi</button>
+</div>
+
+<div class="container">
+
+  <div class="menu-section">
+    <h2>Menu</h2>
+    <div id="menu"></div>
+  </div>
+
+  <div class="cart-section">
+    <h2>Cart</h2>
+    <div id="cart"></div>
+    <h3 id="total"></h3>
+
+    <input id="name" placeholder="Your Name">
+    <input id="address" placeholder="Address">
+    <button onclick="placeOrder()">Checkout</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
